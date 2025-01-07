@@ -1,12 +1,3 @@
-import {
-	Table,
-	TableHeader,
-	TableColumn,
-	TableBody,
-	TableRow,
-	TableCell,
-} from "@nextui-org/react";
-
 import Nav from "@/components/Nav/Nav";
 import Aside from "@/components/Aside/Aside";
 
@@ -24,6 +15,15 @@ import numberOneIcon from "../../public/images/Group 62.png";
 import mamCircleIcon from "../../public/images/Mask Group.png";
 import crownIcon from "../../public/images/Group 131.png";
 import skaterCircleIcon from "../../public/images/Ellipse 5.png";
+
+// import {
+// 	Table,
+// 	TableHeader,
+// 	TableColumn,
+// 	TableBody,
+// 	TableRow,
+// 	TableCell,
+// } from "@nextui-org/react";
 
 const sportsContents = [
 	{
@@ -88,38 +88,37 @@ export default function Home() {
 						<h1 className="text-[#0F3F62] text-[16px] font-bold">Friends</h1>
 						<Image src={doubleDots} alt="" />
 					</div>
-					<div>
-						<Table>
-							<TableHeader>
-								<TableColumn>NAME</TableColumn>
-								<TableColumn>ROLE</TableColumn>
-								<TableColumn>STATUS</TableColumn>
-							</TableHeader>
-							<TableBody>
-								<TableRow key="1">
-									<TableCell>Tony Reichert</TableCell>
-									<TableCell>CEO</TableCell>
-									<TableCell>Active</TableCell>
-								</TableRow>
-								<TableRow key="2">
-									<TableCell>Zoey Lang</TableCell>
-									<TableCell>Technical Lead</TableCell>
-									<TableCell>Paused</TableCell>
-								</TableRow>
-								<TableRow key="3">
-									<TableCell>Jane Fisher</TableCell>
-									<TableCell>Senior Developer</TableCell>
-									<TableCell>Active</TableCell>
-								</TableRow>
-								<TableRow key="4">
-									<TableCell>William Howard</TableCell>
-									<TableCell>Community Manager</TableCell>
-									<TableCell>Vacation</TableCell>
-								</TableRow>
-							</TableBody>
-						</Table>
-					</div>
 				</div>
+				{/* 
+				<Table hideHeader aria-label="Example static collection table">
+					<TableHeader>
+						<TableColumn>NAME</TableColumn>
+						<TableColumn>ROLE</TableColumn>
+						<TableColumn>STATUS</TableColumn>
+					</TableHeader>
+					<TableBody>
+						<TableRow key="1">
+							<TableCell>Tony Reichert</TableCell>
+							<TableCell>CEO</TableCell>
+							<TableCell>Active</TableCell>
+						</TableRow>
+						<TableRow key="2">
+							<TableCell>Zoey Lang</TableCell>
+							<TableCell>Technical Lead</TableCell>
+							<TableCell>Paused</TableCell>
+						</TableRow>
+						<TableRow key="3">
+							<TableCell>Jane Fisher</TableCell>
+							<TableCell>Senior Developer</TableCell>
+							<TableCell>Active</TableCell>
+						</TableRow>
+						<TableRow key="4">
+							<TableCell>William Howard</TableCell>
+							<TableCell>Community Manager</TableCell>
+							<TableCell>Vacation</TableCell>
+						</TableRow>
+					</TableBody>
+				</Table> */}
 			</section>
 			<div className="flex items-center">
 				<Image className="" src={verticalStroke} alt="" />
