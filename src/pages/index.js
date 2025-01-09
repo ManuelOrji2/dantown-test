@@ -35,7 +35,7 @@ export default function Home() {
 	return (
 		<main className="flex h-screen">
 			<Nav />
-			<section className="relative w-[55.63%] pt-[42px] px-[40px]">
+			<section className="relative w-[55.63%] h-screen pt-[42px] px-[40px]">
 				<div className="flex items-center justify-between">
 					<div className="">
 						<h1 className="text-[#0F3F62] text-[24px] font-bold">
