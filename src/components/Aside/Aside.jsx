@@ -44,7 +44,7 @@ const chatsInfo = [
 
 const Aside = () => {
 	return (
-		<section className="w-[27.82%] p-[42px] flex flex-col gap-[40px]">
+		<aside className="w-[27.82%] p-[42px] flex flex-col gap-[40px]">
 			<div className="w-full flex items-center justify-around gap-[24px]">
 				<div className="flex items-center gap-5">
 					<Image className="cursor-pointer" src={mailIcon} alt="" />
@@ -91,7 +91,7 @@ const Aside = () => {
 					<Modal />
 				</div>
 			</div>
-		</section>
+		</aside>
 	);
 };
 
