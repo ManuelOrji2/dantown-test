@@ -72,7 +72,7 @@ const CategoryLinks = [
 
 const Nav = () => {
 	return (
-		<nav className="w-[16.55%]  bg-white box-border flex flex-col gap-[45px] p-[42px]">
+		<nav className="w-[16.55%] h-fit bg-white box-border flex flex-col gap-[45px] p-[42px]">
 			<div className=" flex flex-col items-center gap-[37px]">
 				<div>
 					<Image src={Logo} alt="" />

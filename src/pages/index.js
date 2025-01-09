@@ -36,7 +36,7 @@ export default function Home() {
 		<main className="flex h-screen">
 			<Nav />
 			<section className="relative w-[55.63%] pt-[42px] px-[40px]">
-				<div className="flex items-center justify-between bg-[#f7fafc]">
+				<div className="flex items-center justify-between">
 					<div className="">
 						<h1 className="text-[#0F3F62] text-[24px] font-bold">
 							Hey, Dustin!
@@ -57,7 +57,7 @@ export default function Home() {
 				<section className="">
 					<div className="flex items-center justify-between mt-[40px]">
 						{sportsContents.map((sport) => (
-							<div className="w-[226px] h-[300px] flex flex-col items-center gap-4 rounded-[20px] bg-white">
+							<div className="w-[32%] h-[300px] flex flex-col items-center gap-8 rounded-[20px] bg-white">
 								<div className="flex items-center justify-center w-full h-full bg-[#E0F3F3] rounded-b rounded-[20px]">
 									<Image src={sport.img} alt="" />
 								</div>

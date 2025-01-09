@@ -6,9 +6,9 @@
 	src: local("/src/fonts/AvenirLTStd-Book.otf"),
 		url("/src/fonts/AvenirLTStd-Book.otf"), format("truetype");
 	font-family: "AvenirLTStd-Book";
-	background-color: #f7fafc;
 }
 
 body {
+	background-color: #f7fafc;
 	font-family: AvenirLTStd-Book Arial, Helvetica, sans-serif;
 }
