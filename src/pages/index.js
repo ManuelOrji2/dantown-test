@@ -2,7 +2,6 @@ import Nav from "@/components/Nav/Nav";
 import Aside from "@/components/Aside/Aside";
 
 import searchIcon from "../../public/images/searchIcon.png";
-import verticalStroke from "../../public/images/Vector 11.png";
 import Image from "next/image";
 
 import cyclistIcon from "../../public/images/Group 144.png";
@@ -33,10 +32,10 @@ const sportsContents = [
 
 export default function Home() {
 	return (
-		<main className="flex h-screen">
+		<div className=" h-screen overflow-hidden flex justify-between gap-4">
 			<Nav />
-			<section className="relative w-[55.63%] h-screen pt-[42px] px-[40px]">
-				<div className="flex items-center justify-between">
+			<main className="container flex flex-col gap-[40px] pb-[42px] px-[5px] ">
+				<div className="flex items-center justify-between pt-[42px] px-[40px] ">
 					<div className="">
 						<h1 className="text-[#0F3F62] text-[24px] font-bold">
 							Hey, Dustin!
@@ -54,8 +53,8 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-				<section className="">
-					<div className="flex items-center justify-between mt-[40px]">
+				<section className="h-full overflow-y-auto custom-scrollbar px-[40px]">
+					<div className="flex items-center justify-between">
 						{sportsContents.map((sport) => (
 							<div className="w-[32%] h-[300px] flex flex-col items-center gap-8 rounded-[20px] bg-white">
 								<div className="flex items-center justify-center w-full h-full bg-[#E0F3F3] rounded-b rounded-[20px]">
@@ -72,7 +71,7 @@ export default function Home() {
 							</div>
 						))}
 					</div>
-					<div className="w-full h-[390px] flex flex-col items-center mt-[30px] bg-white rounded-[20px] p-[20px]">
+					<div className="w-full h-[390px] flex flex-col items-center mt-[78px] bg-white rounded-[20px] p-[20px]">
 						<div className="w-full flex items-center justify-between p-[10px]">
 							<h1 className="text-[#0F3F62] text-[16px] font-bold">Friends</h1>
 							<Image src={doubleDots} alt="" />
@@ -80,11 +79,8 @@ export default function Home() {
 						<FriendsRank />
 					</div>
 				</section>
-			</section>
-			<div className="flex items-center">
-				<Image className="" src={verticalStroke} alt="" />
-			</div>
+			</main>
 			<Aside />
-		</main>
+		</div>
 	);
 }

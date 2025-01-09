@@ -8,6 +8,29 @@
 	font-family: "AvenirLTStd-Book";
 }
 
+@layer utilities {
+	/* Custom scrollbar */
+	.custom-scrollbar::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-track {
+		background: inherit; /* Light  #f7fafc;background */
+		border-radius: 10px;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		background-color: #f7fafc; /* Orange thumb */
+		border-radius: 10px;
+		border: 2px solid #f3f4f6; /* Padding effect */
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+		background-color: #f7fafc; /* Darker #f7fafc; on hover */
+	}
+}
+
 body {
 	background-color: #f7fafc;
 	font-family: AvenirLTStd-Book Arial, Helvetica, sans-serif;
