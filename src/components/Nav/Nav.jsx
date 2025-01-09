@@ -72,7 +72,7 @@ const CategoryLinks = [
 
 const Nav = () => {
 	return (
-		<nav className="w-[16.55%] h-[900] bg-white box-border flex flex-col gap-[45px] p-[42px]">
+		<nav className="w-[16.55%]  bg-white box-border flex flex-col gap-[45px] p-[42px]">
 			<div className=" flex flex-col items-center gap-[37px]">
 				<div>
 					<Image src={Logo} alt="" />
@@ -83,7 +83,15 @@ const Nav = () => {
 							<div>
 								<Image src={navlink.img} alt="" />
 							</div>
-							<span className="text-[14px] text-[#8695A0]">{navlink.name}</span>
+							<span
+								className={
+									navlink.name === "Home"
+										? `text-[14px] font-bold text-[#54BCBD] cursor-pointer`
+										: `text-[14px] text-[#8695A0] cursor-pointer`
+								}
+							>
+								{navlink.name}
+							</span>
 						</div>
 					))}
 				</div>
@@ -96,7 +104,9 @@ const Nav = () => {
 							<div>
 								<Image src={link.img} />
 							</div>
-							<span className="text-[14px] text-[#8695A0]">{link.name}</span>
+							<span className="text-[14px] text-[#8695A0] cursor-pointer">
+								{link.name}
+							</span>
 						</div>
 					))}
 				</div>

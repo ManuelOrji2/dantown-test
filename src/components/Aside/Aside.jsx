@@ -47,13 +47,13 @@ const Aside = () => {
 		<section className="w-[27.82%] p-[42px] flex flex-col gap-[40px]">
 			<div className="w-full flex items-center justify-around gap-[24px]">
 				<div className="flex items-center gap-5">
-					<Image src={mailIcon} alt="" />
-					<Image src={notificationIcon} alt="" />
+					<Image className="cursor-pointer" src={mailIcon} alt="" />
+					<Image className="cursor-pointer" src={notificationIcon} alt="" />
 				</div>
 				<div className="flex gap-[10px] items-center">
 					<Image src={rainbowIcon} alt="" />
 					<h1 className="text-[#0F3F62] text-[16px] font-bold">Jamet Roy</h1>
-					<Image src={dropdownIcon} alt="" />
+					<Image className="cursor-pointer" src={dropdownIcon} alt="" />
 				</div>
 			</div>
 			<div className="flex flex-col gap-[22px]">
@@ -67,7 +67,7 @@ const Aside = () => {
 					<div className="flex flex-col gap-[20px]">
 						{chatsInfo.map((info) => (
 							<div key={info.name}>
-								<div className="flex items-center gap-3">
+								<div className="flex items-center gap-3 cursor-pointer">
 									<div>
 										<Image width={56} src={info.img} alt="" />
 									</div>
