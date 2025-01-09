@@ -33,7 +33,7 @@ const sportsContents = [
 
 export default function Home() {
 	return (
-		<main className="flex overflow-hidden h-max-screen">
+		<main className="flex h-screen">
 			<Nav />
 			<section className="relative w-[55.63%] pt-[42px] px-[40px]">
 				<div className="flex items-center justify-between bg-[#f7fafc]">
